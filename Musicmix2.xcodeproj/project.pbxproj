@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2AE1F7361F3EDFE400E3D847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1F7351F3EDFE400E3D847 /* AppDelegate.swift */; };
-		2AE1F7381F3EDFE400E3D847 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1F7371F3EDFE400E3D847 /* ViewController.swift */; };
 		2AE1F73B1F3EDFE400E3D847 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE1F7391F3EDFE400E3D847 /* Main.storyboard */; };
 		2AE1F73D1F3EDFE400E3D847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE1F73C1F3EDFE400E3D847 /* Assets.xcassets */; };
 		2AE1F7401F3EDFE400E3D847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE1F73E1F3EDFE400E3D847 /* LaunchScreen.storyboard */; };
 		2AE1F74B1F3EDFE400E3D847 /* Musicmix2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1F74A1F3EDFE400E3D847 /* Musicmix2Tests.swift */; };
 		2AE1F7561F3EDFE400E3D847 /* Musicmix2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1F7551F3EDFE400E3D847 /* Musicmix2UITests.swift */; };
+		2AE1F7641F3EE0EC00E3D847 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1F7631F3EE0EC00E3D847 /* RootViewController.swift */; };
+		3FC8B50DC3E69F731A8DE087 /* Pods_Musicmix2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168B44E4D6BC7B65E393C31E /* Pods_Musicmix2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1335D2271B80D5349966FA56 /* Pods-Musicmix2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musicmix2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Musicmix2/Pods-Musicmix2.release.xcconfig"; sourceTree = "<group>"; };
+		168B44E4D6BC7B65E393C31E /* Pods_Musicmix2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musicmix2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29551E8A2B11E3657E81CC51 /* Pods-Musicmix2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musicmix2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Musicmix2/Pods-Musicmix2.debug.xcconfig"; sourceTree = "<group>"; };
 		2AE1F7321F3EDFE400E3D847 /* Musicmix2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musicmix2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE1F7351F3EDFE400E3D847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2AE1F7371F3EDFE400E3D847 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2AE1F73A1F3EDFE400E3D847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AE1F73C1F3EDFE400E3D847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AE1F73F1F3EDFE400E3D847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		2AE1F7511F3EDFE400E3D847 /* Musicmix2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Musicmix2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE1F7551F3EDFE400E3D847 /* Musicmix2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musicmix2UITests.swift; sourceTree = "<group>"; };
 		2AE1F7571F3EDFE400E3D847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE1F7631F3EE0EC00E3D847 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC8B50DC3E69F731A8DE087 /* Pods_Musicmix2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				2AE1F7491F3EDFE400E3D847 /* Musicmix2Tests */,
 				2AE1F7541F3EDFE400E3D847 /* Musicmix2UITests */,
 				2AE1F7331F3EDFE400E3D847 /* Products */,
+				FBFA50705F5820ACA1EA9766 /* Pods */,
+				58AC377C9DDA03D7536D2D96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				2AE1F7351F3EDFE400E3D847 /* AppDelegate.swift */,
-				2AE1F7371F3EDFE400E3D847 /* ViewController.swift */,
 				2AE1F7391F3EDFE400E3D847 /* Main.storyboard */,
 				2AE1F73C1F3EDFE400E3D847 /* Assets.xcassets */,
 				2AE1F73E1F3EDFE400E3D847 /* LaunchScreen.storyboard */,
 				2AE1F7411F3EDFE400E3D847 /* Info.plist */,
+				2AE1F7631F3EE0EC00E3D847 /* RootViewController.swift */,
 			);
 			path = Musicmix2;
 			sourceTree = "<group>";
@@ -125,6 +132,23 @@
 			path = Musicmix2UITests;
 			sourceTree = "<group>";
 		};
+		58AC377C9DDA03D7536D2D96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				168B44E4D6BC7B65E393C31E /* Pods_Musicmix2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBFA50705F5820ACA1EA9766 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29551E8A2B11E3657E81CC51 /* Pods-Musicmix2.debug.xcconfig */,
+				1335D2271B80D5349966FA56 /* Pods-Musicmix2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AE1F75A1F3EDFE400E3D847 /* Build configuration list for PBXNativeTarget "Musicmix2" */;
 			buildPhases = (
+				EDA6EB536003BC8A497E2803 /* [CP] Check Pods Manifest.lock */,
 				2AE1F72E1F3EDFE400E3D847 /* Sources */,
 				2AE1F72F1F3EDFE400E3D847 /* Frameworks */,
 				2AE1F7301F3EDFE400E3D847 /* Resources */,
+				C4CC5DFE533AA46EE767DD72 /* [CP] Embed Pods Frameworks */,
+				A5412DA05D080C7C812C5957 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,12 +284,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A5412DA05D080C7C812C5957 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Musicmix2/Pods-Musicmix2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4CC5DFE533AA46EE767DD72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Musicmix2/Pods-Musicmix2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Musicmix2/Pods-Musicmix2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA6EB536003BC8A497E2803 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Musicmix2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2AE1F72E1F3EDFE400E3D847 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE1F7381F3EDFE400E3D847 /* ViewController.swift in Sources */,
+				2AE1F7641F3EE0EC00E3D847 /* RootViewController.swift in Sources */,
 				2AE1F7361F3EDFE400E3D847 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +498,7 @@
 		};
 		2AE1F75B1F3EDFE400E3D847 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29551E8A2B11E3657E81CC51 /* Pods-Musicmix2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52HKEBYGAE;
@@ -428,6 +512,7 @@
 		};
 		2AE1F75C1F3EDFE400E3D847 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1335D2271B80D5349966FA56 /* Pods-Musicmix2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52HKEBYGAE;
@@ -516,6 +601,7 @@
 				2AE1F75C1F3EDFE400E3D847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AE1F75D1F3EDFE400E3D847 /* Build configuration list for PBXNativeTarget "Musicmix2Tests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +610,7 @@
 				2AE1F75F1F3EDFE400E3D847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AE1F7601F3EDFE400E3D847 /* Build configuration list for PBXNativeTarget "Musicmix2UITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +619,7 @@
 				2AE1F7621F3EDFE400E3D847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
