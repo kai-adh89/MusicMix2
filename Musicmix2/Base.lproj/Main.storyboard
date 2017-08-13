@@ -13,7 +13,7 @@
         <scene sceneID="Irh-2c-C37">
             <objects>
                 <tableViewController id="jIa-NB-kRT" customClass="RootViewController" customModule="Musicmix2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4lJ-8X-JT1">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4lJ-8X-JT1" colorLabel="IBBuiltInLabel-Gray">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -30,26 +30,29 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s6z-ED-N6T" id="Pmn-2Q-nU5">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sQA-tQ-rLQ">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sQA-tQ-rLQ">
                                             <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="0vL-s8-AgM"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="44" id="9Qn-pe-KBW"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="IbK-hu-giH"/>
+                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="PpJ-7a-sty"/>
                                                 <constraint firstAttribute="width" constant="44" id="k6U-dE-g1O"/>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="mrN-eQ-wPE"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgu-ZT-W1m">
-                                            <rect key="frame" x="52" y="4" width="315" height="19"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3g-UP-gYM">
+                                            <rect key="frame" x="52" y="20" width="315" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3g-UP-gYM">
-                                            <rect key="frame" x="52" y="20" width="315" height="24"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SD-am-0Ye">
+                                            <rect key="frame" x="52" y="4" width="315" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -58,17 +61,16 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="sQA-tQ-rLQ" secondAttribute="bottom" id="AOy-bh-cdB"/>
-                                        <constraint firstItem="lgu-ZT-W1m" firstAttribute="top" secondItem="Pmn-2Q-nU5" secondAttribute="top" constant="4" id="EKy-I1-15p"/>
-                                        <constraint firstAttribute="trailing" secondItem="lgu-ZT-W1m" secondAttribute="trailing" constant="8" id="Rpg-UO-Q0O"/>
-                                        <constraint firstItem="lgu-ZT-W1m" firstAttribute="top" secondItem="Pmn-2Q-nU5" secondAttribute="top" constant="4" id="bGA-zM-dI4"/>
+                                        <constraint firstItem="sQA-tQ-rLQ" firstAttribute="leading" secondItem="Pmn-2Q-nU5" secondAttribute="leading" id="CkM-J6-eu3"/>
+                                        <constraint firstItem="sQA-tQ-rLQ" firstAttribute="top" secondItem="Pmn-2Q-nU5" secondAttribute="top" id="ZBs-at-CHe"/>
                                         <constraint firstAttribute="bottom" secondItem="sQA-tQ-rLQ" secondAttribute="bottom" id="k4w-zY-bpM"/>
-                                        <constraint firstAttribute="trailing" secondItem="lgu-ZT-W1m" secondAttribute="trailing" constant="8" id="luD-IZ-RIs"/>
+                                        <constraint firstAttribute="bottom" secondItem="sQA-tQ-rLQ" secondAttribute="bottom" id="l28-2T-owa"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="artistLabel" destination="V3g-UP-gYM" id="djW-es-CM9"/>
                                     <outlet property="artworkImageView" destination="sQA-tQ-rLQ" id="VZi-U4-SWz"/>
-                                    <outlet property="trackLabel" destination="lgu-ZT-W1m" id="2wj-Tv-jIP"/>
+                                    <outlet property="trackLabel" destination="7SD-am-0Ye" id="9Ws-5s-ZWI"/>
                                     <segue destination="Xay-4s-PlL" kind="show" id="tp2-Hy-1e1"/>
                                 </connections>
                             </tableViewCell>
