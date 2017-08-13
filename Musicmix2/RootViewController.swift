@@ -14,6 +14,8 @@ class RootViewController: UITableViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     var trackNames = NSMutableArray()
     var previewUrls = NSMutableArray()
+    var artworkUrls = NSMutableArray()
+    var artistNames = NSMutableArray()
     var isLoadNow = false
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
@@ -32,7 +34,9 @@ class RootViewController: UITableViewController {
                     
                     self.trackNames[index] = "\(json["results"][index]["trackName"])"
                     self.previewUrls[index] = "\(json["results"][index]["previewUrl"])"
-                    print(self.trackNames[index])
+                    self.artworkUrls[index] = "\(json["results"][index]["artworkUrl100"])"
+                    self.artistNames[index] = "\(json["results"][index]["artistName"])"
+                    print(self.artworkUrls[index])
                 }
                 self.isLoadNow = false
                 /*
@@ -49,6 +53,8 @@ class RootViewController: UITableViewController {
                     }
                 self.tableView.reloadData()
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -81,8 +87,23 @@ class RootViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = self.trackNames[indexPath.row] as? String
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListCell
+        if let artWorkUrl = self.artworkUrls[indexPath.row] as? String {
+            let url = URL(string: artWorkUrl)!
+            let imageData = try? Data(contentsOf: url)
+           // print(imageData)
+            let artwork = UIImage(data: imageData!)
+           // print(artwork)
+            cell.artworkImageView.image = artwork
+            
+            
+        } else {
+            cell.artworkImageView.image = nil
+        }
+        cell.trackLabel.text = self.trackNames[indexPath.row] as? String
+        cell.artistLabel.text  = self.artistNames[indexPath.row] as? String
+        
+        //cell.textLabel?.text = self.trackNames[indexPath.row] as? String
         //let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         /*
         print("check")
@@ -101,7 +122,7 @@ class RootViewController: UITableViewController {
         return cell
     }
     
-
+   
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -148,3 +169,11 @@ class RootViewController: UITableViewController {
     */
 
 }
+
+class ListCell: UITableViewCell {
+    @IBOutlet weak var artworkImageView: UIImageView!
+    @IBOutlet weak var trackLabel: UILabel!
+    @IBOutlet weak var artistLabel: UILabel!
+    
+}
+
