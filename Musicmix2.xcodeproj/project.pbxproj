@@ -14,6 +14,7 @@
 		2AE1F74B1F3EDFE400E3D847 /* Musicmix2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1F74A1F3EDFE400E3D847 /* Musicmix2Tests.swift */; };
 		2AE1F7561F3EDFE400E3D847 /* Musicmix2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1F7551F3EDFE400E3D847 /* Musicmix2UITests.swift */; };
 		2AE1F7641F3EE0EC00E3D847 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1F7631F3EE0EC00E3D847 /* RootViewController.swift */; };
+		2AE1F76A1F40393D00E3D847 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1F7691F40393D00E3D847 /* DetailViewController.swift */; };
 		3FC8B50DC3E69F731A8DE087 /* Pods_Musicmix2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168B44E4D6BC7B65E393C31E /* Pods_Musicmix2.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		2AE1F7551F3EDFE400E3D847 /* Musicmix2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musicmix2UITests.swift; sourceTree = "<group>"; };
 		2AE1F7571F3EDFE400E3D847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AE1F7631F3EE0EC00E3D847 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		2AE1F7691F40393D00E3D847 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				2AE1F73E1F3EDFE400E3D847 /* LaunchScreen.storyboard */,
 				2AE1F7411F3EDFE400E3D847 /* Info.plist */,
 				2AE1F7631F3EE0EC00E3D847 /* RootViewController.swift */,
+				2AE1F7691F40393D00E3D847 /* DetailViewController.swift */,
 			);
 			path = Musicmix2;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE1F76A1F40393D00E3D847 /* DetailViewController.swift in Sources */,
 				2AE1F7641F3EE0EC00E3D847 /* RootViewController.swift in Sources */,
 				2AE1F7361F3EDFE400E3D847 /* AppDelegate.swift in Sources */,
 			);
@@ -503,10 +507,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52HKEBYGAE;
 				INFOPLIST_FILE = Musicmix2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = scientia.Musicmix2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -517,10 +523,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52HKEBYGAE;
 				INFOPLIST_FILE = Musicmix2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = scientia.Musicmix2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

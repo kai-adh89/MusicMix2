@@ -158,15 +158,21 @@ class RootViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? DetailViewController {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                vc.trackName = self.trackNames[indexPath.row] as! String
+                vc.previewUrl = self.previewUrls[indexPath.row] as? String
+            }
+        }
     }
-    */
+
 
 }
 
