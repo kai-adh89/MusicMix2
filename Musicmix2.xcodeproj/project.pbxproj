@@ -223,7 +223,7 @@
 				TargetAttributes = {
 					2AE1F7311F3EDFE400E3D847 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 52HKEBYGAE;
+						DevelopmentTeam = FKKYW4MM62;
 						ProvisioningStyle = Automatic;
 					};
 					2AE1F7451F3EDFE400E3D847 = {
@@ -506,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52HKEBYGAE;
+				"DEVELOPMENT_TEAM[sdk=*]" = FKKYW4MM62;
 				INFOPLIST_FILE = Musicmix2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
