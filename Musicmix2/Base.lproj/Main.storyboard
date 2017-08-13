@@ -69,6 +69,7 @@
                                     <outlet property="artistLabel" destination="V3g-UP-gYM" id="djW-es-CM9"/>
                                     <outlet property="artworkImageView" destination="sQA-tQ-rLQ" id="VZi-U4-SWz"/>
                                     <outlet property="trackLabel" destination="lgu-ZT-W1m" id="2wj-Tv-jIP"/>
+                                    <segue destination="Xay-4s-PlL" kind="show" id="tp2-Hy-1e1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -85,6 +86,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIh-bV-Agp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.79999999999995" y="80.50974512743629"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="M9U-fs-PaW">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="Xay-4s-PlL" customClass="DetailViewController" customModule="Musicmix2" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QaW-yQ-C4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713" y="88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="THI-8l-j8W">
