@@ -53,6 +53,7 @@
 		2AE1F7571F3EDFE400E3D847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AE1F7631F3EE0EC00E3D847 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		2AE1F7691F40393D00E3D847 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B095424C1F42BEEB00D672E9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +139,7 @@
 		58AC377C9DDA03D7536D2D96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B095424C1F42BEEB00D672E9 /* AVFoundation.framework */,
 				168B44E4D6BC7B65E393C31E /* Pods_Musicmix2.framework */,
 			);
 			name = Frameworks;
@@ -225,6 +227,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = FKKYW4MM62;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					2AE1F7451F3EDFE400E3D847 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -505,12 +512,12 @@
 			baseConfigurationReference = 29551E8A2B11E3657E81CC51 /* Pods-Musicmix2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 52HKEBYGAE;
+				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=*]" = FKKYW4MM62;
 				INFOPLIST_FILE = Musicmix2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = scientia.Musicmix2;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.primetheory.Musicmix2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -522,11 +529,11 @@
 			baseConfigurationReference = 1335D2271B80D5349966FA56 /* Pods-Musicmix2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 52HKEBYGAE;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Musicmix2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = scientia.Musicmix2;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.primetheory.Musicmix2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

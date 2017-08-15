@@ -19,6 +19,14 @@ class DetailViewController: AVPlayerViewController {
         super.viewDidLoad()
         
         title = trackName // title設定
+        let audioSession = AVAudioSession.sharedInstance()
+        
+        do {
+            try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+            try audioSession.setActive(true)
+        } catch let error as NSError {
+            print(error)
+        }
         
         if let previewUrl = previewUrl {
             let musicUrl = URL(string: previewUrl)
@@ -26,5 +34,4 @@ class DetailViewController: AVPlayerViewController {
             player?.play() // 自動再生
         }
     }
-
 }

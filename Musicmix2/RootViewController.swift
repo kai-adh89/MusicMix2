@@ -17,6 +17,7 @@ class RootViewController: UITableViewController {
     var artworkUrls = NSMutableArray()
     var artistNames = NSMutableArray()
     var isLoadNow = false
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         let searchWord: String? = searchBar.text?.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
